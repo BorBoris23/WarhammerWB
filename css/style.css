@@ -1,0 +1,23 @@
+.myCanvas {
+    border: 3px solid black;
+}
+.map {
+    display: flex;
+}
+
+.interface {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+
+.button {
+    padding: 30px;
+    background-color: darkgrey;
+    color: black;
+    border-radius: 5px;
+}
+.button-indent {
+    margin-top: 10px;
+}
