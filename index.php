@@ -26,6 +26,11 @@ require_once __DIR__ .'/app/includes.php';
             <button id="nextMove" class="button button-indent" type="submit">next move</button>
         </div>
     </div>
+    <div class="textArea">
+        <textarea>
+
+        </textarea>
+    </div>
 </body>
 </html>
 
