@@ -1,5 +1,5 @@
 <?php
-require_once('./app/includes.php');
+require_once __DIR__.'/../app/includes.php';
 
 $simulation = new Simulation(60, 32, 'saveFile.txt');
 

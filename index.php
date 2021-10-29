@@ -19,7 +19,6 @@ require_once __DIR__ .'/app/includes.php';
     <div class="map">
         <canvas id="myCanvas" class="myCanvas"></canvas>
         <div class="interface">
-            <button id="start1" class="button1" type="submit">start simulation</button>
             <button id="start" class="button" type="submit">start simulation</button>
             <button id="stop" class="button button-indent" type="submit">stop simulation</button>
             <button id="restart" class="button button-indent" type="submit">restart simulation</button>
