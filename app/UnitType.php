@@ -18,7 +18,7 @@ class UnitType extends ObjectType
 {
     public $race;
     public $name;
-    private $moveSpeed;
+    public $moveSpeed;
     public $hitPoint;
     public $damage;
     public $attackLength;

@@ -12,8 +12,8 @@ abstract class Entity implements JsonSerializable
 abstract class Squad extends Entity
 {
     public $unitType;
-    private $countUnit;
-    private $lastUnitXP;
+    public $countUnit;
+    public $lastUnitXP;
     public $squadDamage;
     public $squadXP;
     public $attackDistance;

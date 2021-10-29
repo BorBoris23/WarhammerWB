@@ -8,12 +8,12 @@ class Simulation
     private $writer;
     public $reader;
 
-    public function __construct($longitude, $latitude, $fileName)
+    public function __construct($longitude, $latitude)
     {
-        $this->fileName = $fileName;
+        $this->fileName = Simulation::getJsonFilePath();
         $this->map = new Map($longitude, $latitude);
-        $this->writer = new FileWriter($fileName);
-        $this->reader = new FileReader($fileName);
+        $this->writer = new FileWriter($this->fileName);
+        $this->reader = new FileReader($this->fileName);
         $this->message = new Message();
     }
 
@@ -130,6 +130,15 @@ class Simulation
     {
         $this->deleteAllContentToMap();
         unlink($this->fileName);
+    }
+
+    static function getJsonFilePath()
+    {
+        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+            return 'saveFile.txt';
+        } else {
+            return '/tmp/saveFile.txt';
+        }
     }
 }
 

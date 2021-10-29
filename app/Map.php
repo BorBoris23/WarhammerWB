@@ -2,8 +2,8 @@
 class Map implements JsonSerializable
 {
     public $mapContent = [];
-    private $longitude;
-    private $latitude;
+    public $longitude;
+    public $latitude;
 
     public function __construct($longitude, $latitude)
     {
