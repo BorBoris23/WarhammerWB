@@ -3,7 +3,7 @@ $(document).ready (
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "/api/currentStateMap.php",
+            url: "api/currentStateMap.php",
             success: function (response) {
                 resizeCanvas(response);
                 drawMap(response);
@@ -23,7 +23,7 @@ $(document).ready (
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "/api/nextMove.php",
+                url: "api/nextMove.php",
                 success: function (response) {
                     drawMap(response);
                     showMessage(response);
@@ -41,7 +41,7 @@ $(document).ready (
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "/api/reset.php",
+                url: "api/reset.php",
                 success: function (response) {
                     drawMap(response);
                 }
